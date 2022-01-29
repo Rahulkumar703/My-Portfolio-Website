@@ -12,7 +12,7 @@ function Header() {
       </nav>
       <div className="info-bar">
         <p className="info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil minus facilis odit beatae perferendis, et illo iusto pariatur est?
+          Here will be go some important notification.
         </p>
       </div>
     </header>
