@@ -33,7 +33,7 @@ header nav .title .title-link h1
     transition: .3s;
     text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
 }
-/* Navbar Title */
+/* Navbar Title Hover Effects */
 header nav .title .title-link:hover h1,
 header nav .title .title-link:focus h1
 {
@@ -65,7 +65,7 @@ header nav .nav-tabs .nav-list .nav-items:first-child
 }
 header nav .nav-tabs .nav-list .nav-items:last-child
 {
-    margin-left: 0;
+    margin-right: 0;
 }
 header nav .nav-tabs .nav-list .nav-links
 {
@@ -106,11 +106,12 @@ header nav .nav-tabs .nav-list .nav-links:focus .nav-links-text h5
     color: var(--white);
 }
 header nav .nav-tabs .nav-list .nav-links:hover,
-header nav .nav-tabs .nav-list .nav-links:focus
+header nav .nav-tabs .nav-list .nav-links:focus,
+header nav .nav-tabs .nav-list .nav-links.active
 {
     box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
                 0px 5px 15px rgba(0,0,0,0.1);
-                outline: none;
+    outline: none;
 }
 
 /* Info bar */
