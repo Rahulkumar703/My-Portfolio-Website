@@ -11,33 +11,97 @@ header nav
     height: 8rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: .5rem 5%;
     background: linear-gradient(to top right, var(--primary-blue), var(--secondary-blue));
 }
-header nav .title
+
+/* Navbar Title */
+header nav .title .title-link
+{
+    color: var(--black);
+}
+header nav .title .title-link .icon
 {
     display: flex;
 }
-header nav .title .icon
+header nav .title .title-link h1
 {
-    display: flex;
-}
-header nav .title h1
-{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--black);
+    transition: .3s;
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
+}
+/* Navbar Title */
+header nav .title .title-link:hover h1
+{
+    color: var(--white);
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
 
 
+/* Navigation tabs */
+header nav .nav-tabs
+{
+    flex: 1;
+}
+header nav .nav-tabs .nav-list
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+header nav .nav-tabs .nav-list .nav-items
+{
+    margin: 0 2rem;
+}
+header nav .nav-tabs .nav-list .nav-links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    transition: .3s ease-in-out;
+}
+header nav .nav-tabs .nav-list .nav-links .nav-links-icon,
+header nav .nav-tabs .nav-list .nav-links .nav-links-icon i
+{
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .nav-tabs .nav-list .nav-links .nav-links-text
+{
+    font-weight: normal;
+}
+/* Navigation Tabs Hover Effects */
+header nav .nav-tabs .nav-list .nav-links:hover .nav-links-icon i,
+header nav .nav-tabs .nav-list .nav-links:hover .nav-links-text h5
+{
+    color: var(--white);
+}
+header nav .nav-tabs .nav-list .nav-links:hover
+{
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
+                0px 5px 15px rgba(0,0,0,0.1);
+}
 
+/* Info bar */
 header .info-bar
 {
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(178, 250, 196);
-    color: #0a0a0a;
+    background: linear-gradient(to top right, var(--primary-green), var(--secondary-green));
+    color: var(--black);
     font-size: 2rem;
     margin-top: .1rem;
     padding: .5rem;

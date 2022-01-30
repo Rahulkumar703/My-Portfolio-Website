@@ -2,6 +2,8 @@
 {
   --primary-blue : rgb(178, 221, 250);
   --secondary-blue : rgb(144, 143, 255);
+  --primary-green : rgb(178, 250, 196);
+  --secondary-green : rgb(85, 250, 126);
   --black : rgb(39, 39, 39);
   --white : rgb(235, 235, 235);
 }
