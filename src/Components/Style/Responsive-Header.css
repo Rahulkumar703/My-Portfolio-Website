@@ -1,0 +1,37 @@
+/* for--phone-only */
+@media (max-width: 599px) { 
+    
+}
+/* for-tablet-portrait-up */
+@media (max-width: 1800px) { 
+    html
+    {
+        font-size: 70%;
+    }
+}
+/* for-tablet-landscape-up */
+@media (max-width: 1200px) { 
+    html
+    {
+        font-size: 62.5%;
+    }
+}
+/* for-desktop-up */
+@media (max-width: 900px) { 
+    html
+    {
+        font-size: 60%;
+    }
+    header nav .nav-tabs .nav-list .nav-links .nav-links-text
+    {
+        display: none;
+    }
+    header nav .nav-tabs .nav-list .nav-links .nav-links-icon
+    {
+        margin-right: 0;
+    }
+}
+/* for-big-desktop-up */
+@media (max-width: 600px) { 
+    
+}

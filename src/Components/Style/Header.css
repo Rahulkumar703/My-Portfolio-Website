@@ -34,7 +34,8 @@ header nav .title .title-link h1
     text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
 }
 /* Navbar Title */
-header nav .title .title-link:hover h1
+header nav .title .title-link:hover h1,
+header nav .title .title-link:focus h1
 {
     color: var(--white);
     text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
@@ -58,39 +59,58 @@ header nav .nav-tabs .nav-list .nav-items
 {
     margin: 0 2rem;
 }
+header nav .nav-tabs .nav-list .nav-items:first-child
+{
+    margin-left: 0;
+}
+header nav .nav-tabs .nav-list .nav-items:last-child
+{
+    margin-left: 0;
+}
 header nav .nav-tabs .nav-list .nav-links
 {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    font-size: 1.5rem;
     cursor: pointer;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     transition: .3s ease-in-out;
+    color: var(--black);
 }
-header nav .nav-tabs .nav-list .nav-links .nav-links-icon,
+header nav .nav-tabs .nav-list .nav-links .nav-links-icon
+{
+    margin-right: .5rem;
+}
 header nav .nav-tabs .nav-list .nav-links .nav-links-icon i
 {
-    margin: 0 .5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: normal;
+    transform: translatey(.25rem);
 }
-header nav .nav-tabs .nav-list .nav-links .nav-links-text
+header nav .nav-tabs .nav-list .nav-links .nav-links-text h5
 {
+    font-size: 1.5rem;
     font-weight: normal;
 }
+
 /* Navigation Tabs Hover Effects */
 header nav .nav-tabs .nav-list .nav-links:hover .nav-links-icon i,
-header nav .nav-tabs .nav-list .nav-links:hover .nav-links-text h5
+header nav .nav-tabs .nav-list .nav-links:hover .nav-links-text h5,
+header nav .nav-tabs .nav-list .nav-links:focus .nav-links-icon i,
+header nav .nav-tabs .nav-list .nav-links:focus .nav-links-text h5
 {
     color: var(--white);
 }
-header nav .nav-tabs .nav-list .nav-links:hover
+header nav .nav-tabs .nav-list .nav-links:hover,
+header nav .nav-tabs .nav-list .nav-links:focus
 {
     box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
                 0px 5px 15px rgba(0,0,0,0.1);
+                outline: none;
 }
 
 /* Info bar */

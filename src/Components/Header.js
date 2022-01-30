@@ -1,5 +1,6 @@
 import React from 'react'
 import './Style/Header.css'
+import './Style/Responsive-Header.css'
 
 function Header() {
   return (
@@ -16,9 +17,9 @@ function Header() {
         <div className="nav-tabs">
           <ul className="nav-list">
             <li href="/" className="nav-items">
-              <a className="nav-links">
+              <a href="/" className="nav-links" title="Home">
                 <span className="nav-links-icon">
-                  <i class="fi fi-rr-home"></i>
+                  <i className="fi fi-rr-home"></i>
                 </span>
                 <span className="nav-links-text">
                   <h5>Home</h5>
@@ -26,9 +27,9 @@ function Header() {
               </a>
             </li>
             <li href="/" className="nav-items">
-              <a className="nav-links">
+              <a href="/" className="nav-links" title="About">
                 <span className="nav-links-icon">
-                  <i class="fi fi-rr-info"></i>
+                  <i className="fi fi-rr-info"></i>
                 </span>
                 <span className="nav-links-text">
                   <h5>About</h5>
@@ -36,9 +37,9 @@ function Header() {
               </a>
             </li>
             <li href="/" className="nav-items">
-              <a className="nav-links">
+              <a href="/" className="nav-links" title="Projects" >
                 <span className="nav-links-icon">
-                  <i class="fi fi-rr-briefcase"></i>
+                  <i className="fi fi-rr-briefcase"></i>
                 </span>
                 <span className="nav-links-text">
                   <h5>Projects</h5>
@@ -46,9 +47,9 @@ function Header() {
               </a>
             </li>
             <li href="/" className="nav-items">
-              <a className="nav-links">
+              <a href="/" className="nav-links" title="Contact" >
                 <span className="nav-links-icon">
-                  <i class="fi fi-rr-comment-alt"></i>
+                  <i className="fi fi-rr-comment-alt"></i>
                 </span>
                 <span className="nav-links-text">
                   <h5>Contact</h5>
