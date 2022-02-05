@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Style/Header.css'
-import './Style/Responsive-Header.css'
+import './Style/Responsive_Header.css'
 
 
 function Header() {
@@ -8,18 +9,19 @@ function Header() {
   return (
     <header>
 
+      {/* Navbar */}
       <nav>
 
         <div className="title">
-          <a href="#" className="title-link">
+          <Link to="/" className="title-link" onClick={() => { setActiveTab("Home") }}>
             <h1>My Potfolio</h1>
-          </a>
+          </Link>
         </div>
 
         <div className="nav-tabs">
           <ul className="nav-list">
             <li className="nav-items">
-              <a href="#"
+              <Link to="/"
                 className={`nav-links ${activeTab === "Home" ? "active" : ''}`}
                 title="Home"
                 onClick={() => { setActiveTab("Home") }}>
@@ -29,10 +31,10 @@ function Header() {
                 <span className="nav-links-text">
                   <h5>Home</h5>
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="nav-items">
-              <a href="#"
+              <Link to="/about"
                 className={`nav-links ${activeTab === "About" ? "active" : ''}`}
                 title="About"
                 onClick={() => { setActiveTab("About") }}>
@@ -42,10 +44,10 @@ function Header() {
                 <span className="nav-links-text">
                   <h5>About</h5>
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="nav-items">
-              <a href="#"
+              <Link to="/projects"
                 className={`nav-links ${activeTab === "Projects" ? "active" : ''}`}
                 title="Projects"
                 onClick={() => { setActiveTab("Projects") }}>
@@ -55,10 +57,10 @@ function Header() {
                 <span className="nav-links-text">
                   <h5>Projects</h5>
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="nav-items">
-              <a href="#"
+              <Link to="/contact"
                 className={`nav-links ${activeTab === "Contact" ? "active" : ''}`}
                 title="Contact"
                 onClick={() => { setActiveTab("Contact") }}>
@@ -68,13 +70,14 @@ function Header() {
                 <span className="nav-links-text">
                   <h5>Contact</h5>
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
       </nav>
 
+      {/* Info Bar */}
       <div className="info-bar">
         <p className="info-text">
           Here will be go some important notification.

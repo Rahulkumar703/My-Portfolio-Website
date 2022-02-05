@@ -61,7 +61,7 @@
     /* Navigation Tabs */
     header nav .nav-tabs
     {
-        width: 25rem;
+        width: 30rem;
         position: fixed;
         bottom: 1rem;
         left: 50%;
@@ -79,7 +79,7 @@
     }
     header nav .nav-tabs .nav-list .nav-items
     {
-        margin: 0 .5rem!important;
+        margin: 0 1rem!important;
     }
     header nav .nav-tabs .nav-list .nav-links 
     {

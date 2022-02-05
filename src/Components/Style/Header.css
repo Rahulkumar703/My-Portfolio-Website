@@ -37,11 +37,11 @@ header nav .title .title-link h1
     text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
 }
 /* Navbar Title Hover Effects */
-header nav .title .title-link:hover h1,
-header nav .title .title-link:focus h1
+header nav .title .title-link:hover h1
 {
-    color: var(--white);
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    color: var(--primary-green);
+    filter: saturate(2);
+    text-shadow: 0 1px 1px var(--black),0 1px 5px var(--primary-green);
 }
 
 
@@ -101,22 +101,28 @@ header nav .nav-tabs .nav-list .nav-links .nav-links-text h5
 }
 
 /* Navigation Tabs Hover Effects */
-header nav .nav-tabs .nav-list .nav-links:hover .nav-links-icon i,
-header nav .nav-tabs .nav-list .nav-links:hover .nav-links-text h5,
-header nav .nav-tabs .nav-list .nav-links:focus .nav-links-icon i,
-header nav .nav-tabs .nav-list .nav-links:focus .nav-links-text h5
+header nav .nav-tabs .nav-list .nav-links:hover
 {
     color: var(--white);
+    text-shadow: 0 1px 5px var(--white);
+}
+header nav .nav-tabs .nav-list .nav-links.active:hover
+{
+    color: var(--primary-green);
+    text-shadow: 0 1px 5px var(--primary-green);
 }
 header nav .nav-tabs .nav-list .nav-links:hover,
-header nav .nav-tabs .nav-list .nav-links:focus,
 header nav .nav-tabs .nav-list .nav-links.active
 {
     box-shadow: 0px 1px 5px rgba(0,0,0,0.2),
                 0px 5px 15px rgba(0,0,0,0.1);
-    outline: none;
+                font-weight: bold;
 }
-
+header nav .nav-tabs .nav-list .nav-links.active
+{
+    color: var(--primary-green);
+    filter: saturate(2);
+}
 /* Info bar */
 header .info-bar
 {
