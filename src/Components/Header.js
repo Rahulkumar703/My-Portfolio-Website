@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Style/Header.css'
 import './Style/Responsive_Header.css'
 
 
 function Header() {
-  const [activeTab, setActiveTab] = useState("Home");
+
+  const [url, setUrl] = useState(useLocation().pathname.replace('/', ''));
+  const [activeTab, setActiveTab] = useState(url == '' ? 'home' : url);
+
+  useEffect(() => {
+    setActiveTab(url == '' ? 'home' : url);
+  }, [url]);
+
   return (
     <header>
 
@@ -13,7 +20,7 @@ function Header() {
       <nav>
 
         <div className="title">
-          <Link to="/" className="title-link" onClick={() => { setActiveTab("Home") }}>
+          <Link to="/" className="title-link" onClick={() => { setActiveTab("home") }}>
             <h1>My Potfolio</h1>
           </Link>
         </div>
@@ -22,9 +29,9 @@ function Header() {
           <ul className="nav-list">
             <li className="nav-items">
               <Link to="/"
-                className={`nav-links ${activeTab === "Home" ? "active" : ''}`}
+                className={`nav-links ${activeTab === "home" ? "active" : ''}`}
                 title="Home"
-                onClick={() => { setActiveTab("Home") }}>
+                onClick={() => { setActiveTab("home") }}>
                 <span className="nav-links-icon">
                   <i className="fi fi-rr-home"></i>
                 </span>
@@ -35,9 +42,9 @@ function Header() {
             </li>
             <li className="nav-items">
               <Link to="/about"
-                className={`nav-links ${activeTab === "About" ? "active" : ''}`}
+                className={`nav-links ${activeTab === "about" ? "active" : ''}`}
                 title="About"
-                onClick={() => { setActiveTab("About") }}>
+                onClick={() => { setActiveTab("about") }}>
                 <span className="nav-links-icon">
                   <i className="fi fi-rr-info"></i>
                 </span>
@@ -48,9 +55,9 @@ function Header() {
             </li>
             <li className="nav-items">
               <Link to="/projects"
-                className={`nav-links ${activeTab === "Projects" ? "active" : ''}`}
+                className={`nav-links ${activeTab === "projects" ? "active" : ''}`}
                 title="Projects"
-                onClick={() => { setActiveTab("Projects") }}>
+                onClick={() => { setActiveTab("projects") }}>
                 <span className="nav-links-icon">
                   <i className="fi fi-rr-briefcase"></i>
                 </span>
@@ -61,9 +68,9 @@ function Header() {
             </li>
             <li className="nav-items">
               <Link to="/contact"
-                className={`nav-links ${activeTab === "Contact" ? "active" : ''}`}
+                className={`nav-links ${activeTab === "contact" ? "active" : ''}`}
                 title="Contact"
-                onClick={() => { setActiveTab("Contact") }}>
+                onClick={() => { setActiveTab("contact") }}>
                 <span className="nav-links-icon">
                   <i className="fi fi-rr-comment-alt"></i>
                 </span>
