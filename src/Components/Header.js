@@ -7,10 +7,10 @@ import './Style/Responsive_Header.css'
 function Header() {
 
   const [url, setUrl] = useState(useLocation().pathname.replace('/', ''));
-  const [activeTab, setActiveTab] = useState(url == '' ? 'home' : url);
+  const [activeTab, setActiveTab] = useState(url === '' ? 'home' : url);
 
   useEffect(() => {
-    setActiveTab(url == '' ? 'home' : url);
+    setActiveTab(url === '' ? 'home' : url);
   }, [url]);
 
   return (

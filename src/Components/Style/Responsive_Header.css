@@ -61,22 +61,24 @@
     /* Navigation Tabs */
     header nav .nav-tabs
     {
-        width: 30rem;
-        height: 10rem;
+        width: 100%;
+        /* height: 10rem; */
         position: fixed;
-        bottom: 1rem;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         background: linear-gradient(to top right, var(--primary-blue), var(--secondary-blue));
         padding: 1rem;
         border-radius: 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     header nav .nav-tabs .nav-list
     {
-        justify-content: center;
+        justify-content: space-around;
     }
     header nav .nav-tabs .nav-list .nav-items
     {
@@ -84,7 +86,7 @@
     }
     header nav .nav-tabs .nav-list .nav-links 
     {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         padding: .5rem;

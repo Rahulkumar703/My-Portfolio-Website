@@ -17,6 +17,6 @@
     .page
     {
         height: calc(100vh - 7.1rem);
-        margin-bottom: 11rem;
+        padding-bottom: 8rem;
     }
 }

@@ -33,6 +33,7 @@ header nav .title .title-link .icon
 header nav .title .title-link h1
 {
     font-size: 2.5rem;
+    padding: .5rem 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--black);
     transition: .3s;
